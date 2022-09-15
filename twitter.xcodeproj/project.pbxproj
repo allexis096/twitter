@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD705DC228D3E1C20048778A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD705DC128D3E1C20048778A /* ProfileViewController.swift */; };
 		ADABF0D128D1410200DCA76D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADABF0D028D1410200DCA76D /* AppDelegate.swift */; };
 		ADABF0D328D1410200DCA76D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADABF0D228D1410200DCA76D /* SceneDelegate.swift */; };
 		ADABF0D528D1410200DCA76D /* MainTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADABF0D428D1410200DCA76D /* MainTabbarViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AD705DC128D3E1C20048778A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		ADABF0CD28D1410200DCA76D /* twitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = twitter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADABF0D028D1410200DCA76D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADABF0D228D1410200DCA76D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +47,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD705DC028D3E1AC0048778A /* General */ = {
+			isa = PBXGroup;
+			children = (
+				AD705DC128D3E1C20048778A /* ProfileViewController.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
 		ADABF0C428D1410100DCA76D = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +88,7 @@
 		ADABF0E428D1439100DCA76D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				AD705DC028D3E1AC0048778A /* General */,
 				ADABF0E528D1439900DCA76D /* Core */,
 			);
 			path = Controllers;
@@ -179,6 +190,7 @@
 				ADABF0D128D1410200DCA76D /* AppDelegate.swift in Sources */,
 				ADABF0D328D1410200DCA76D /* SceneDelegate.swift in Sources */,
 				ADABF0E728D143B700DCA76D /* HomeViewController.swift in Sources */,
+				AD705DC228D3E1C20048778A /* ProfileViewController.swift in Sources */,
 				ADABF0ED28D143ED00DCA76D /* DirectMessagesViewController.swift in Sources */,
 				ADABF0F028D1513000DCA76D /* TweetTableViewCell.swift in Sources */,
 			);

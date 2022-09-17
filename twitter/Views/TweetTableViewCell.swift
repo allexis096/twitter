@@ -29,8 +29,7 @@ class TweetTableViewCell: UITableViewCell {
         imageView.layer.cornerRadius = 25
         imageView.layer.masksToBounds = true
         imageView.clipsToBounds = true
-        imageView.image = UIImage(systemName: "person")
-        imageView.backgroundColor = .white
+        imageView.image = UIImage(named: "avatar")
         
         return imageView
     }()

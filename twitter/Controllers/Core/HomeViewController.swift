@@ -52,6 +52,12 @@ class HomeViewController: UIViewController {
         
         timelineTableView.frame = view.frame
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        navigationController?.navigationBar.isHidden = false
+    }
 }
 
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {

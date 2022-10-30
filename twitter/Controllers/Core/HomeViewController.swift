@@ -46,6 +46,12 @@ class HomeViewController: UIViewController {
         timelineTableView.dataSource = self
         
         configureNavigationBar()
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "rectangle.portrait.and.arrow.right"), style: .plain, target: self, action: #selector(didTapSignOut))
+    }
+    
+    @objc private func didTapSignOut() {
+        try? Auth.auth().signOut()
+        handleAuthentication()
     }
 
     override func viewDidLayoutSubviews() {
@@ -54,11 +60,7 @@ class HomeViewController: UIViewController {
         timelineTableView.frame = view.frame
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        navigationController?.navigationBar.isHidden = false
-        
+    private func handleAuthentication() {
         if Auth.auth().currentUser == nil {
             let vc = UINavigationController(rootViewController: OnboardingViewController())
             
@@ -66,6 +68,14 @@ class HomeViewController: UIViewController {
             
             present(vc, animated: false)
         }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        navigationController?.navigationBar.isHidden = false
+        
+        handleAuthentication()
     }
 }
 
